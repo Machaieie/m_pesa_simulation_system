@@ -31,7 +31,56 @@ class Cliente_Service:
 
 
     def servicos(self):
-        pass
+        print("Menu YA/16-25 anos \n")
+        print("1. SoPraTi")
+        print("2. Chamadas e SMS")
+        print("3. Super Jackpot")
+        print("4. ILIMITADO(Tudo Top)")
+        print("5. Megas YA")
+        print("6. M-Pesa")
+        print("7. Roaming/Internacional")
+        print("8. Txuna")
+        print("9. Entretenimento")
+        print("10. Servicos")
+        print("11. EN")
+
+        while True:
+            try:
+                opc = int(input("Digite uma opcao: "))
+            except ValueError:
+                print("\n❌ Opção inválida! Digite um número.\n")
+                continue
+            match opc:
+                case 1:
+                    print("1. 10MT = 12Min+150MB+100SMS/1d")
+                    print("2. 2MT = 5min/1d(TodasRedes)")
+                    print("3. 7MT = 206MB/1d")
+                    print("4. 4MT = 11.2min/1d(Todasredes)")
+                    print("5. Mais SoPraTi")
+                case 2:
+                    print("Voda Jackpot")
+                    print("Todas redes Jackpot")
+                    print("3. Super Janckpot")
+                    print("4. SoPapo (Todas Redes)")
+                    print("5. Bom dia")
+                    print("6. Meu Numero 1")
+                    print("7. SMS")
+                    print("8. Turno da Noite")
+                    print("0. Voltar")
+                case 3:
+                    print("Dados+SMS e Minutos p/todas redes \n")
+                    print("1. 10MT = 13min+200MB+100SMS/1d")
+                    print("2. 20MT = 26min+400MB+100SMS/1d")
+                    print("3. 50MT = 54min+1GB+250SMS/1d")
+                    print("4. Mais")
+                    print("0. Voltar(00. Inicio)")
+               
+
+
+            
+
+        
+
 
     
 
