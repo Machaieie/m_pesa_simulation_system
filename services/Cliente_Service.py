@@ -8,7 +8,7 @@ from services.Util import Util
 
 class Cliente_Service:
 
-    def registar_numero(self):
+    def registar_numero():
         nome = input("Digite seu nome: ")
         apelido = input("Digite o apelido: ")
         data_nascimento = input("Digite sua data de nascimento (DD/MM/AAAA): ")
@@ -26,7 +26,8 @@ class Cliente_Service:
             identificacao=identificacao, endereco=endereco
         )
 
-        DatabaseManager.save_customer(new_customer)
+        db_manager = DatabaseManager()
+        db_manager.save_customer(new_customer)
 
 
     def servicos(self):
